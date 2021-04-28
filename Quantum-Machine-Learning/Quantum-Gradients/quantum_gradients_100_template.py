@@ -41,7 +41,7 @@ def parameter_shift(weights):
     # QHACK #
 
     def parameter_shift_term(qnode, params,i,j):
-        dx = 0.05
+        dx = 0.01
         
         shifted_forw = params.copy()
         shifted_forw[i][j] += dx
